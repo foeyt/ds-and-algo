@@ -1,4 +1,4 @@
-import utils.LinkedNode as Utils
+import utils.Node as Utils
 
 
 def add_to_head(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedNode | None:

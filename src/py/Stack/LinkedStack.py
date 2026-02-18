@@ -1,4 +1,4 @@
-import utils.LinkedNode as Utils
+import utils.Node as Utils
 
 class LinkedStack:
     def __init__(self):
