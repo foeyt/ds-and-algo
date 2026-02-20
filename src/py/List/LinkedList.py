@@ -20,7 +20,7 @@ def add_to_tail(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedN
     while p.next is not None:
         p = p.next
     p.next = node
-    return p.next
+    return head
 
 
 def insert(node: Utils.LinkedNode, nex: Utils.LinkedNode):
