@@ -1,8 +1,8 @@
-import utils.Node as Utils
+from utils.Node import LinkedNode
 
 class LinkedStack:
     def __init__(self):
-        self.__peek: Utils.LinkedNode | None = None
+        self.__peek: LinkedNode | None = None
         self.__size: int = 0
 
 
@@ -15,7 +15,7 @@ class LinkedStack:
     
 
     def push(self, val):
-        node = Utils.LinkedNode(val)
+        node = LinkedNode(val)
         node.next = self.__peek
         self.__peek = node
         self.__size += 1

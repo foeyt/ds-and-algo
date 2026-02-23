@@ -1,9 +1,9 @@
-import utils.Node as Utils
+from utils.Node import DoubleLinkedNode
 
 class LinkedDeque:
     def __init__(self):
-        self.__head: Utils.DoubleLinkedNode | None = None
-        self.__tail: Utils.DoubleLinkedNode | None = None
+        self.__head: DoubleLinkedNode | None = None
+        self.__tail: DoubleLinkedNode | None = None
         self.__size: int = 0
 
 
@@ -12,7 +12,7 @@ class LinkedDeque:
     
 
     def __push_head(self, val):
-        node = Utils.DoubleLinkedNode(val)
+        node = DoubleLinkedNode(val)
         if self.__size == 0:
             self.__head = self.__tail = node
         else:
@@ -23,7 +23,7 @@ class LinkedDeque:
 
 
     def __push_tail(self, val):
-        node = Utils.DoubleLinkedNode(val)
+        node = DoubleLinkedNode(val)
         if self.__size == 0:
             self.__head = self.__tail = node
         else:

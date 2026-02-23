@@ -64,5 +64,6 @@ class ChainingHashMap:
         result: list[HashMap.Pair] = []
         for i in self.__buckets:
             for j in i:
-                result.append(j)
+                if j is not None:
+                    result.append(j)
         return result

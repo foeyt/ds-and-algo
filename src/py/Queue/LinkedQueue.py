@@ -1,9 +1,9 @@
-import utils.Node as Utils
+from utils.Node import LinkedNode
 
 class LinkedQueue:
     def __init__(self):
-        self.__head: Utils.LinkedNode | None = None
-        self.__tail: Utils.LinkedNode | None = None
+        self.__head: LinkedNode | None = None
+        self.__tail: LinkedNode | None = None
         self.__size: int = 0
 
 
@@ -12,7 +12,7 @@ class LinkedQueue:
     
     
     def push(self, val):
-        node = Utils.LinkedNode(val)
+        node = LinkedNode(val)
         if self.__head is None:
             self.__head = self.__tail = node
         else:

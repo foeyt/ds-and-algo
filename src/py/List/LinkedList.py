@@ -1,7 +1,7 @@
-import utils.Node as Utils
+from utils.Node import LinkedNode
 
 
-def add_to_head(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedNode | None:
+def add_to_head(head: LinkedNode, node: LinkedNode) -> LinkedNode | None:
     if head is None:
         print("[FATAL] Head node is None!")
         return None
@@ -11,7 +11,7 @@ def add_to_head(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedN
     return head
 
 
-def add_to_tail(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedNode | None:
+def add_to_tail(head: LinkedNode, node: LinkedNode) -> LinkedNode | None:
     if head is None:
         print("[FATAL] Head node is None!")
         return None
@@ -23,13 +23,13 @@ def add_to_tail(head: Utils.LinkedNode, node: Utils.LinkedNode) -> Utils.LinkedN
     return head
 
 
-def insert(node: Utils.LinkedNode, nex: Utils.LinkedNode):
+def insert(node: LinkedNode, nex: LinkedNode):
     p = node.next
     node.next = nex
     nex.next = p
 
 
-def remove(head: Utils.LinkedNode, index: int):
+def remove(head: LinkedNode, index: int):
     p = head
     for _ in range(0, index - 1):
         p = p.next
@@ -39,7 +39,7 @@ def remove(head: Utils.LinkedNode, index: int):
     return q.val
 
 
-def access(head: Utils.LinkedNode, index: int) -> Utils.LinkedNode | None:
+def access(head: LinkedNode, index: int) -> LinkedNode | None:
     p = head
     for _ in range(0, index - 1):
         if p is None:
@@ -48,7 +48,7 @@ def access(head: Utils.LinkedNode, index: int) -> Utils.LinkedNode | None:
     return p
 
 
-def search(head: Utils.LinkedNode, val) -> int:
+def search(head: LinkedNode, val) -> int:
     p = head
     index = 0
     while p is not None:
@@ -58,8 +58,8 @@ def search(head: Utils.LinkedNode, val) -> int:
         p = p.next
     return -1
 
-def insert_sort(head: Utils.LinkedNode) -> Utils.LinkedNode:
-    dummy = Utils.LinkedNode(-1)
+def insert_sort(head: LinkedNode) -> LinkedNode:
+    dummy = LinkedNode(-1)
     dummy.next = head
     sorted = head
     cur = head.next
@@ -78,7 +78,7 @@ def insert_sort(head: Utils.LinkedNode) -> Utils.LinkedNode:
     return dummy.next
 
 
-def to_list(head: Utils.LinkedNode) -> list:
+def to_list(head: LinkedNode) -> list:
     li: list = []
     p = head
     while p is not None:

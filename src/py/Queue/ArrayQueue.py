@@ -18,7 +18,7 @@ class ArrayQueue:
         self.__size += 1
 
 
-    def pop(self) -> int:
+    def pop(self):
         capacity = len(self.__li)
         val = self.__li[self.__front]
         self.__front = (self.__front + 1) % capacity
