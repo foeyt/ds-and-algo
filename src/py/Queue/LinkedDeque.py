@@ -65,7 +65,7 @@ class LinkedDeque:
         elif mode == "head":
             self.__push_head(val)
         else:
-            raise TypeError
+            raise TypeError()
         
 
     def pop(self, mode="head"):
@@ -83,7 +83,7 @@ class LinkedDeque:
         elif mode == "tail":
             self.__access_tail()
         else:
-            raise TypeError
+            raise TypeError()
         
 
     def to_list(self) -> list:

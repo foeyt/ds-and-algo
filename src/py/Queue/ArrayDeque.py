@@ -62,7 +62,7 @@ class ArrayDeque:
         elif mode == "head":
             self.__push_head(val)
         else:
-            raise TypeError
+            raise TypeError()
         
 
     def pop(self, mode="head"):
@@ -71,7 +71,7 @@ class ArrayDeque:
         elif mode == "tail":
             self.__pop_tail()
         else:
-            raise TypeError
+            raise TypeError()
         
 
     def access(self, mode="head"):
@@ -80,7 +80,7 @@ class ArrayDeque:
         elif mode == "tail":
             self.__access_tail()
         else:
-            raise TypeError
+            raise TypeError()
         
 
     def to_list(self) -> list:

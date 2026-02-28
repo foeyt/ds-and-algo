@@ -1,6 +1,7 @@
 from utils.Node import TreeNode
 from Queue.ArrayQueue import ArrayQueue
 
+
 def level_order(root: TreeNode) -> list[TreeNode]:
     queue: ArrayQueue = ArrayQueue()
     queue.push(root)
