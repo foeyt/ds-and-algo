@@ -2,6 +2,7 @@
 
 - [Hello 算法](https://www.hello-algo.com/)
 - [质数生成器](https://zh.numberempire.com/primenumbers.php)
+- [排序可视化](https://zhao-zihan.github.io/sorting-algorithm-visualizer/)
 
 # 学习时读过的网站
 
